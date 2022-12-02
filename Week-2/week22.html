@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2.2</title>
+    <style>
+        .container{
+            height: 500px;
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition-property: transform;
+            
+        }
+        P{
+            display: inline;
+            position:relative;
+            left:200px;
+            top: 50px;
+        }
+
+       .container:hover .S1{
+            transform-origin: left top;
+            transition-duration: 2s;
+            transform: rotate(90deg);
+       
+
+       }
+        .S1{
+            display: inline;
+            position:relative;
+            left:100px;
+
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition-property:transform;
+            transition-timing-function: ease-in;
+        }
+        .S2{
+            display: block;
+            position: relative;
+            top:100px;
+            
+            width: 100px;
+            height: 100px;
+            background-color: rgb(25, 24, 24);
+            transition-property: transform;
+            transition-timing-function: ease-in;
+        }
+        .S3{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(76, 244, 25);
+            transition-property: transform;
+            transition-timing-function: ease-in;
+        }
+        .S4{
+            display: block;
+            position: relative;
+            top:100px;
+            left:-100px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(28, 28, 233);
+            transition-property: transform;
+            transition-timing-function: ease-in;
+
+        }
+        .S1:hover{
+            transform-origin: left top;
+            transition-duration: 2s;
+            transform: rotate(90deg);
+        }
+        .container:hover .S2{
+            transform-origin: left bottom;
+            transition-duration: 2s;
+            transform: rotate(-90deg);
+        }
+        .container:hover .S3{
+            transform-origin: right top;
+            transition-duration:2s;
+            transform: rotate(-90deg);
+            
+        }
+
+        .container:hover .S4{
+            transform-origin: right bottom;
+            transition-duration: 2s;
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><P>HI</P>
+        <div class="test"></div>
+        <div class="S1"> </div>
+        <div class="S2"> </div>
+        <div class="S3"> </div>
+        <div class="S4"> </div>
+    </div>
+    
+</body>
+</html>
